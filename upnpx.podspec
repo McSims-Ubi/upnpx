@@ -26,5 +26,7 @@ Pod::Spec.new do |s|
   }
   s.requires_arc = false
   s.libraries = 'c++'
-  s.static_framework = true
+
+  s.preserve_path = 'src/module.modulemap'
+  s.module_map = 'src/module.modulemap'
 end
